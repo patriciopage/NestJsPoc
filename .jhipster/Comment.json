@@ -1,0 +1,28 @@
+{
+  "name": "Comment",
+  "fields": [
+    {
+      "fieldName": "contents",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "conversation",
+      "otherEntityRelationshipName": "comment",
+      "relationshipName": "conversation"
+    }
+  ],
+  "entityTableName": "comment",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["myApp"],
+  "changelogDate": "20210729150216"
+}

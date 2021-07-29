@@ -1,0 +1,33 @@
+{
+  "name": "Notification",
+  "fields": [
+    {
+      "fieldName": "source",
+      "fieldType": "NotificationSource",
+      "fieldValues": "TWITTER,FACEBOOK,INSTAGRAM,EMAIL,WEBPAGE"
+    },
+    {
+      "fieldName": "contents",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "incident",
+      "otherEntityRelationshipName": "notification",
+      "relationshipName": "incident"
+    }
+  ],
+  "entityTableName": "notification",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["myApp"],
+  "changelogDate": "20210729150016"
+}

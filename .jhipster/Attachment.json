@@ -1,0 +1,27 @@
+{
+  "name": "Attachment",
+  "fields": [
+    {
+      "fieldName": "url",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "observation",
+      "otherEntityRelationshipName": "attachment",
+      "relationshipName": "observation"
+    }
+  ],
+  "entityTableName": "attachment",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["myApp"],
+  "changelogDate": "20210729150416"
+}

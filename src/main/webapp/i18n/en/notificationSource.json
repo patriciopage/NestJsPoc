@@ -1,0 +1,12 @@
+{
+  "myApp": {
+    "NotificationSource": {
+      "null": "",
+      "TWITTER": "TWITTER",
+      "FACEBOOK": "FACEBOOK",
+      "INSTAGRAM": "INSTAGRAM",
+      "EMAIL": "EMAIL",
+      "WEBPAGE": "WEBPAGE"
+    }
+  }
+}

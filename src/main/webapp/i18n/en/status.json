@@ -1,0 +1,10 @@
+{
+  "myApp": {
+    "Status": {
+      "null": "",
+      "OPEN": "OPEN",
+      "CLOSED": "CLOSED",
+      "PAUSED": "PAUSED"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Agent",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "firstName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "middleName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "lastName",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "incident",
+      "otherEntityRelationshipName": "agent",
+      "relationshipName": "incident"
+    }
+  ],
+  "entityTableName": "agent",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["myApp"],
+  "changelogDate": "20210729145816"
+}

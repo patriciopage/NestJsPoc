@@ -1,0 +1,35 @@
+{
+  "name": "Conversation",
+  "fields": [
+    {
+      "fieldName": "contents",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "comment",
+      "otherEntityRelationshipName": "conversation",
+      "relationshipName": "comment"
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "incident",
+      "otherEntityRelationshipName": "conversation",
+      "relationshipName": "incident",
+      "ownerSide": false
+    }
+  ],
+  "entityTableName": "conversation",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["myApp"],
+  "changelogDate": "20210729150116"
+}

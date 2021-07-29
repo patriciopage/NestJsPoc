@@ -1,0 +1,57 @@
+{
+  "name": "Incident",
+  "fields": [
+    {
+      "fieldName": "createdAt",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Status",
+      "fieldValues": "OPEN,CLOSED,PAUSED"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "conversation",
+      "otherEntityRelationshipName": "incident",
+      "relationshipName": "conversation",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "observation",
+      "otherEntityRelationshipName": "incident",
+      "relationshipName": "observation"
+    },
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "notification",
+      "otherEntityRelationshipName": "incident",
+      "relationshipName": "notification"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "agent",
+      "otherEntityRelationshipName": "incident",
+      "relationshipName": "agent"
+    },
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "customer",
+      "otherEntityRelationshipName": "incident",
+      "relationshipName": "customer"
+    }
+  ],
+  "entityTableName": "incident",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["myApp"],
+  "changelogDate": "20210729145916"
+}

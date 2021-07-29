@@ -1,0 +1,57 @@
+{
+  "generator-jhipster": {
+    "authenticationType": "jwt",
+    "cacheProvider": "ehcache",
+    "clientFramework": "react",
+    "serverPort": "8080",
+    "serviceDiscoveryType": false,
+    "skipUserManagement": false,
+    "withAdminUi": true,
+    "baseName": "myApp",
+    "buildTool": "maven",
+    "databaseType": "sql",
+    "devDatabaseType": "sqlite",
+    "enableHibernateCache": true,
+    "enableSwaggerCodegen": false,
+    "enableTranslation": true,
+    "jhiPrefix": "jhi",
+    "languages": ["en"],
+    "messageBroker": false,
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "skipClient": false,
+    "testFrameworks": [],
+    "websocket": false,
+    "applicationType": "monolith",
+    "packageName": "com.jhipster.node",
+    "packageFolder": "com/myapp",
+    "jhipsterVersion": "7.0.0",
+    "skipServer": false,
+    "clientPackageManager": "npm",
+    "dtoSuffix": "DTO",
+    "entitySuffix": "",
+    "reactive": false,
+    "clientTheme": "none",
+    "clientThemeVariant": "",
+    "entities": ["Customer", "Agent", "Incident", "Notification", "Conversation", "Comment", "Observation", "Attachment"],
+    "skipCheckLengthOfIdentifier": false,
+    "skipFakeData": false,
+    "blueprints": [
+      {
+        "name": "generator-jhipster-nodejs",
+        "version": "2.0.0-beta.1"
+      }
+    ],
+    "otherModules": [
+      {
+        "name": "generator-jhipster-nodejs",
+        "version": "2.0.0-beta.1"
+      }
+    ],
+    "pages": [],
+    "nativeLanguage": "en",
+    "creationTimestamp": 1627570576352,
+    "jwtSecretKey": "MjkyOWY5NTUxMjZlM2M0N2ZhZWYxYzQ2ZDgyMjgyZTQ0ZGM5YjQxOWRiOTc2M2VlOGExZDA5MTVhNGQ3M2U3NzMyNWVmMjRiMTg2MTRkMTIxMmYyODkyN2Y4YTg2NjFlYzdhODE5OGYzNmY4NDcxNGUwYmVkNjIwOGI1MTE5NzU=",
+    "lastLiquibaseTimestamp": 1627571056000
+  }
+}
