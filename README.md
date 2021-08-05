@@ -1,3 +1,0 @@
-- Instalar jhipster y nhipster
-- Crear el model.jdl
--
